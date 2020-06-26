@@ -7,16 +7,19 @@ html, body{
 .slideshow_wrapper{ 
     position: relative; 
     width: 100%;
-    height:60%;
-    background-color: rgb(230, 230, 255);
+    height:70%;
+    background-color: rgb(230, 230, 255); /* Whole Background color */
 }
 
 .slideshow_body{
     width:40%;
-    height: 100%;
+    height: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding: 1%;
 }
+
+/* Image */
 
 .ssp_image{
     position: relative;
@@ -32,13 +35,56 @@ html, body{
     height: 100%;
 }
 
+/* Heading in the post */
+.ssp_name{
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.ssp_name h1{
+    text-align: center;
+    margin: 0px;
+    /* To style the heading */
+}
+
+.ssp_name h2{
+    margin: 0px;
+    text-align: center;
+}
+
+/* Description Info */
+
+.ssp_desc{
+    padding:10px;
+    text-align: center;
+}
+
+.ssp_desc p{
+    margin: 0px;
+}
+
+.ssp_desc .ssp_tel{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ssp_desc .ssp_email{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* To add something to all posts */
+
 .slideshow_post {
   position: absolute;
   width:38%;
-  height:100%;
+  height:90%;
   z-index: 3;
+  background-color: rgb(230, 230, 255); /* WARNING: Needs to be same as background color to work */
   animation: slideshow 12s linear 0s infinite;
 }
+
+/* SlideShow adapter*/
 
 .slideshow_post:nth-child(2) {
   z-index: 2;
